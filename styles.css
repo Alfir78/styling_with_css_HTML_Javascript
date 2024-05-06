@@ -1,0 +1,35 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 100px); /* Adjust the size of cells as needed */
+    grid-template-rows: repeat(5, 100px); /* Adjust the size of cells as needed */
+    grid-gap: 5px; /* Adjust the gap between cells */
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #f5f5dc; /* Default background color (beige) */
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #e0e0e0; /* Hover background color */
+}
+
+.red {
+    background-color: #ff9999; /* Color for red agents (red squares) */
+}
+
+.blue {
+    background-color: #9999ff; /* Color for blue agents (blue squares) */
+}
+
+.black {
+    background-color: #000000; /* Color for assassin (black square) */
+    color: #ffffff; /* Text color for assassin (white) */
+}
